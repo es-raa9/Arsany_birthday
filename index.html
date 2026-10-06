@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -41,31 +41,20 @@ body{
   box-shadow:0 0 50px rgba(255,200,0,.08);
 }
 
+/* BATMAN LOGO */
 .logo{
-  width:240px;
-  height:95px;
+  width:250px;
+  height:115px;
   margin:0 auto 35px;
-  background:#f5c400;
-  border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow:0 0 35px rgba(245,196,0,.25);
+  filter:drop-shadow(0 0 18px rgba(245,196,0,.3));
 }
 
-.bat{
-  width:190px;
-  height:70px;
-  background:#050505;
-  clip-path:polygon(
-    0% 42%, 12% 30%, 23% 37%, 32% 18%,
-    42% 30%, 50% 8%, 58% 30%, 68% 18%,
-    77% 37%, 88% 30%, 100% 42%,
-    91% 48%, 85% 66%, 75% 57%,
-    68% 82%, 58% 67%, 50% 100%,
-    42% 67%, 32% 82%, 25% 57%,
-    15% 66%, 9% 48%
-  );
+.logo svg{
+  width:100%;
+  height:100%;
 }
 
 .small{
@@ -151,8 +140,14 @@ button:hover{
 }
 
 @keyframes fade{
-  from{opacity:0;transform:translateY(10px)}
-  to{opacity:1;transform:translateY(0)}
+  from{
+    opacity:0;
+    transform:translateY(10px)
+  }
+  to{
+    opacity:1;
+    transform:translateY(0)
+  }
 }
 </style>
 </head>
@@ -161,10 +156,53 @@ button:hover{
 
 <div class="screen">
 
+  <!-- INTRO -->
   <div class="box" id="intro">
 
     <div class="logo">
-      <div class="bat"></div>
+
+      <svg viewBox="0 0 320 196" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Yellow oval -->
+        <ellipse
+          cx="160"
+          cy="98"
+          rx="150"
+          ry="78"
+          fill="#f5c400"
+          stroke="#000"
+          stroke-width="5"
+        />
+
+        <!-- Batman -->
+        <g fill="#050505">
+
+          <path d="
+          M160 42
+          L150 42
+          L142 30
+          C144 72 111 70 84 43
+          C25 76 23 101 70 142
+          C48 121 78 105 108 136
+          C116 119 142 120 159 162
+          L160 42
+          Z"/>
+
+          <path d="
+          M160 42
+          L170 42
+          L178 30
+          C176 72 209 70 236 43
+          C295 76 297 101 250 142
+          C272 121 242 105 212 136
+          C204 119 178 120 161 162
+          L160 42
+          Z"/>
+
+        </g>
+
+      </svg>
+
     </div>
 
     <div class="small">WAYNE SYSTEMS // CLASSIFIED</div>
@@ -180,10 +218,51 @@ button:hover{
   </div>
 
 
+  <!-- WELCOME -->
   <div class="box" id="welcome" style="display:none;">
 
     <div class="logo">
-      <div class="bat"></div>
+
+      <svg viewBox="0 0 320 196" xmlns="http://www.w3.org/2000/svg">
+
+        <ellipse
+          cx="160"
+          cy="98"
+          rx="150"
+          ry="78"
+          fill="#f5c400"
+          stroke="#000"
+          stroke-width="5"
+        />
+
+        <g fill="#050505">
+
+          <path d="
+          M160 42
+          L150 42
+          L142 30
+          C144 72 111 70 84 43
+          C25 76 23 101 70 142
+          C48 121 78 105 108 136
+          C116 119 142 120 159 162
+          L160 42
+          Z"/>
+
+          <path d="
+          M160 42
+          L170 42
+          L178 30
+          C176 72 209 70 236 43
+          C295 76 297 101 250 142
+          C272 121 242 105 212 136
+          C204 119 178 120 161 162
+          L160 42
+          Z"/>
+
+        </g>
+
+      </svg>
+
     </div>
 
     <div class="small">IDENTITY VERIFIED ✓</div>
@@ -199,10 +278,51 @@ button:hover{
   </div>
 
 
+  <!-- MESSAGE -->
   <div class="box" id="message">
 
     <div class="logo">
-      <div class="bat"></div>
+
+      <svg viewBox="0 0 320 196" xmlns="http://www.w3.org/2000/svg">
+
+        <ellipse
+          cx="160"
+          cy="98"
+          rx="150"
+          ry="78"
+          fill="#f5c400"
+          stroke="#000"
+          stroke-width="5"
+        />
+
+        <g fill="#050505">
+
+          <path d="
+          M160 42
+          L150 42
+          L142 30
+          C144 72 111 70 84 43
+          C25 76 23 101 70 142
+          C48 121 78 105 108 136
+          C116 119 142 120 159 162
+          L160 42
+          Z"/>
+
+          <path d="
+          M160 42
+          L170 42
+          L178 30
+          C176 72 209 70 236 43
+          C295 76 297 101 250 142
+          C272 121 242 105 212 136
+          C204 119 178 120 161 162
+          L160 42
+          Z"/>
+
+        </g>
+
+      </svg>
+
     </div>
 
     <div class="small">CLASSIFIED MESSAGE</div>
