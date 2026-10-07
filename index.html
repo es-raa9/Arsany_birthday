@@ -135,6 +135,15 @@ button:hover{
   font-size:30px;
 }
 
+/* FINAL BATMAN MESSAGE */
+.batman-text{
+  margin-top:18px;
+  color:#f5c400;
+  font-size:15px;
+  letter-spacing:2px;
+  font-family:monospace;
+}
+
 .fade{
   animation:fade .8s ease;
 }
@@ -205,15 +214,21 @@ button:hover{
 
     </div>
 
-    <div class="small">WAYNE SYSTEMS // CLASSIFIED</div>
+    <div class="small">
+      WAYNE SYSTEMS // CLASSIFIED
+    </div>
 
-    <div id="status">ACCESSING CLASSIFIED FILE...</div>
+    <div id="status">
+      ACCESSING CLASSIFIED FILE...
+    </div>
 
     <div class="progress">
       <div class="bar" id="bar"></div>
     </div>
 
-    <div id="percent">0%</div>
+    <div id="percent">
+      0%
+    </div>
 
   </div>
 
@@ -265,15 +280,21 @@ button:hover{
 
     </div>
 
-    <div class="small">IDENTITY VERIFIED ✓</div>
+    <div class="small">
+      IDENTITY VERIFIED ✓
+    </div>
 
-    <h1>WELCOME, ARSANY.</h1>
+    <h1>
+      WELCOME, ARSANY.
+    </h1>
 
     <p>
       You've been granted access to one very important file.
     </p>
 
-    <button onclick="openFile()">OPEN FILE →</button>
+    <button onclick="openFile()">
+      OPEN FILE →
+    </button>
 
   </div>
 
@@ -325,12 +346,24 @@ button:hover{
 
     </div>
 
-    <div class="small">CLASSIFIED MESSAGE</div>
+    <div class="small">
+      CLASSIFIED MESSAGE
+    </div>
 
     <div class="message">
+
       كل سنة و أنت طيب و بألف خير يا هندسة،<br>
+
       تنعاد عليك السنين و أنت محقق كل اللي بتتمناه
-      <div class="heart">🫡 ♥</div>
+
+      <div class="heart">
+        🫡 ♥
+      </div>
+
+      <div class="batman-text">
+        You are the real Batman 🦇✨
+      </div>
+
     </div>
 
   </div>
@@ -346,8 +379,11 @@ let timer = setInterval(function(){
 
   progress++;
 
-  document.getElementById("bar").style.width = progress + "%";
-  document.getElementById("percent").innerText = progress + "%";
+  document.getElementById("bar").style.width =
+    progress + "%";
+
+  document.getElementById("percent").innerText =
+    progress + "%";
 
   if(progress >= 100){
 
@@ -355,9 +391,14 @@ let timer = setInterval(function(){
 
     setTimeout(function(){
 
-      document.getElementById("intro").style.display = "none";
-      document.getElementById("welcome").style.display = "block";
-      document.getElementById("welcome").classList.add("fade");
+      document.getElementById("intro").style.display =
+        "none";
+
+      document.getElementById("welcome").style.display =
+        "block";
+
+      document.getElementById("welcome")
+        .classList.add("fade");
 
     },700);
 
@@ -368,13 +409,18 @@ let timer = setInterval(function(){
 
 function openFile(){
 
-  document.getElementById("welcome").style.display = "none";
-  document.getElementById("message").style.display = "block";
-  document.getElementById("message").classList.add("fade");
+  document.getElementById("welcome").style.display =
+    "none";
+
+  document.getElementById("message").style.display =
+    "block";
+
+  document.getElementById("message")
+    .classList.add("fade");
 
 }
 
 </script>
 
 </body>
-</html>
+  </html>
